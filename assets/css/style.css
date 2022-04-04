@@ -24,6 +24,12 @@
   gap: 30px;
 }
 
+@media only screen and (max-width: 400px) {
+  .login-container {
+    width: 22rem;
+  }
+}
+
 .login-container h1 {
   font-size: 5rem;
   color: rgba(249, 66, 58, 1);
@@ -32,8 +38,21 @@
   position: absolute;
 }
 
+@media only screen and (max-width: 400px) {
+  .login-container h1 {
+    top: 1rem;
+    left: 4.5rem;
+  }
+}
+
 .login-container p {
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 400px) {
+  .login-container p {
+    font-size: 0.9rem;
+  }
 }
 
 .login-container button {
@@ -49,6 +68,12 @@
   position: relative;
 }
 
+.login-container button:hover {
+  background: skyblue;
+  color: #fff;
+  font-weight: 700;
+}
+
 .login-container button img {
   max-width: 30px;
   position: absolute;
@@ -58,6 +83,19 @@
 .login-container a {
   position: absolute;
   bottom: 1.5rem;
-  left: 8.5rem;
+  left: 7.5rem;
+  padding: 0.5rem 1rem;
   text-decoration: none;
+}
+
+.login-container a:hover {
+  background: skyblue;
+  border-radius: 0.32rem ;
+}
+
+@media only screen and (max-width: 400px) {
+  .login-container a {
+    bottom: 4rem;
+    left: 5rem;
+  }
 }
