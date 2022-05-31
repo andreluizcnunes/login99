@@ -18,21 +18,47 @@
 
   <body>
     <header></header>
-    <main class="main-container">
-      <form action="" class="login-container">
-        <h1>Logo</h1>
-        <p>Clique no botão abaixo para fazer login:</p>
-        <button>
-          <img
-            src="assets/img/icons8-google-logo.svg"
-            alt="Login Google"
-          />Login com Google
-        </button>
-        <button>
-          <img src="assets/img/microsoft.svg" alt="Login Microsoft" />Login com
-          Microsoft
-        </button>
-        <a href="#">Termos de serviço</a>
+    <main>
+      <form>
+        <section class="inputs-container">
+          <input type="email" placeholder="example@gmail.com" />
+
+          <div class="password-container">
+            <input
+              type="password"
+              id="field-password"
+              class="field-password"
+              placeholder="***************"
+            />
+            <i></i>
+            <i></i>
+          </div>
+        </section>
+
+        <section class="password-infos">
+          <div>
+            <input type="checkbox" />
+            <span>Lembrar senha?</span>
+          </div>
+
+          <a href="#">Esqueceu sua senha?</a>
+        </section>
+
+        <button id="btn-login">Login</button>
+
+        <section class="links-container">
+          <span>Ou entre com:</span>
+
+          <aside>
+            <a href=""><i></i></a>
+            <a href=""><i></i></a>
+            <a href=""><i></i></a>
+          </aside>
+        </section>
+        <footer>
+          <hr />
+          <span>Ainda não tem uma conta? <a href="#">Cadastre-se</a></span>
+        </footer>
       </form>
     </main>
 
