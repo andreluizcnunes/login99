@@ -7,37 +7,30 @@
   color: rgb(241, 232, 232);
 }
 
-header {
-  width: 100%;
-  min-height: 9vh;
+body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #383c42;
-  padding: 1rem;
-  position: fixed;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  color: rgb(241, 232, 232);
 }
 
 main {
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
+  padding-top: 5%;
+  margin: auto;
   background: linear-gradient(to top, #63c5fa, #2d88f8, #0674fa);
 
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 
   box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.25);
 }
 
 main form {
-  margin-top: 9%;
-  width: 35%;
-  height: 75vh;
+  margin-top: 5%;
+  width: 35rem;
+  height: 30rem;
+  margin: auto;
 
   background-color: #383c42;
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4) inset 0px 4px 4px
@@ -48,6 +41,19 @@ main form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  main form {
+    width: 100vw;
+    height: 90vh;
+
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .inputs-container {
@@ -75,6 +81,12 @@ main form {
 
 .inputs-container input:focus {
   box-shadow: inset 1px 4px 7px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 600px) {
+  .inputs-container {
+    margin-top: 0%;
+  }
 }
 
 .password-container {
@@ -116,6 +128,14 @@ main form {
   color: #18acfe;
 }
 
+@media screen and (max-width: 400px) {
+  .password-infos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
 #btn-login {
   background-color: #18acfe;
   width: 90%;
@@ -141,7 +161,7 @@ main form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 2%;
 }
 
 .links-container span {
@@ -150,7 +170,7 @@ main form {
 }
 
 .links-container aside {
-  margin-top: 5%;
+  margin-top: 2%;
   width: 50%;
 
   display: flex;
@@ -218,7 +238,7 @@ main form footer hr {
 main form footer span {
   font-weight: 400;
   font-size: 0.9rem;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 main form footer a {
