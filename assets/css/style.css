@@ -8,12 +8,14 @@
 }
 
 header {
+  width: 100%;
   min-height: 9vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #383c42;
   padding: 1rem;
+  position: fixed;
 }
 
 header h1 {
@@ -33,7 +35,7 @@ main {
 }
 
 main form {
-  margin-top: 5%;
+  margin-top: 9%;
   width: 35%;
   height: 75vh;
 
@@ -49,7 +51,7 @@ main form {
 }
 
 .inputs-container {
-  margin-top: 10%;
+  margin-top: 5%;
   width: 100%;
 
   display: flex;
@@ -121,7 +123,7 @@ main form {
   border: 0;
   outline: 0;
   border-radius: 12px;
-  margin-top: 10%;
+  margin-top: 5%;
   font-size: 1.6rem;
   font-weight: 600;
   cursor: pointer;
@@ -196,4 +198,34 @@ main form {
 .facebook:hover {
   background-color: #14a0f9;
   color: #fff !important;
+}
+
+main form footer {
+  width: 100%;
+  margin-top: 10%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main form footer hr {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+}
+
+main form footer span {
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-top: 5%;
+}
+
+main form footer a {
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+}
+
+main form footer a:hover {
+  color: #18acfe;
 }
